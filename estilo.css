@@ -1,0 +1,43 @@
+/* CSS Externo */
+
+body {
+    background: #1b1b1b;
+    /* cor fundo */
+    color: rgb(136, 51, 206);
+    /* cor TEXTOS */
+    font-family: "Playfair Display", serif;
+}
+
+a {
+    color: #e9e9e9;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    /* Estilo de Lista */
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(186, 177, 177);
+    border-bottom: 5px solid #ffffff;
+}
+
+.menu-desktop {
+    background: #8d94c9;
+    display: none; /* esconde o menu desktop */
+}
+
+/* Medidas Responsivas */
+@media (min-width: 768px) {
+    .menu-desktop{
+        display: flex;
+    }
+}
+
+
+

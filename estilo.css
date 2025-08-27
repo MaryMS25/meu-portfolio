@@ -1,9 +1,17 @@
 /* CSS Externo */
 
+/* Definir as cores Tema Dark */
+/* raiz */
+:root,
+:root[data-theme='dark'] {
+    --cor-fundo: #1b1b1b;
+    --cor-texto: rgb(136, 51, 206);
+}
+
 body {
-    background: #1b1b1b;
+    background:;
     /* cor fundo */
-    color: rgb(136, 51, 206);
+    color:  ;
     /* cor TEXTOS */
     font-family: "Playfair Display", serif;
 }

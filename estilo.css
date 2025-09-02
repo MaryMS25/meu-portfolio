@@ -9,6 +9,7 @@
     --cor-texto: #e0e0e0;       /* texto claro */
     --cor-destaque: #8e44ff;    /* roxo vibrante */
     --cor-borda: #333333; 
+    --menu-link: #f3e2e2;
 }
 
 :root[data-theme='light'] {
@@ -17,8 +18,8 @@
     --cor-texto: #1c1c1c;       /* texto escuro */
     --cor-destaque: #6c2ed9;    /* roxo mais suave */
     --cor-borda: #cccccc;
+    --menu-link: #27414e;
 }
-
 
 body {
     background: var(--cor-fundo);
@@ -45,7 +46,6 @@ header {
     width: 100%;
     background-color: var(--cor-fundo-secundario);
     border-bottom: 5px solid var(--cor-borda); 
-
 }
 
 .menu-desktop {
@@ -53,6 +53,33 @@ header {
     display: none;
     /* esconde o menu desktop */
 }
+
+/* NAV = UL */
+.menu {
+    display: flex; /* em linha // horizontal */
+    gap: 1rem; /* 16px */
+    align-items: center;
+}
+
+/* LI = listas */
+.menu-item {
+    width: 100%;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+}
+
+.menu-text {
+   color: var(--menu-link);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Menu Hamburguer
+botao menu mobile */
+
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {

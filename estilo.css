@@ -4,19 +4,25 @@
 /* raiz */
 :root,
 :root[data-theme='dark'] {
-    --cor-fundo: #121212;       /* fundo escuro */
+    --cor-fundo: #121212;
+    /* fundo escuro */
     --cor-fundo-secundario: #1e1e1e;
-    --cor-texto: #e0e0e0;       /* texto claro */
-    --cor-destaque: #8e44ff;    /* roxo vibrante */
-    --cor-borda: #333333; 
+    --cor-texto: #e0e0e0;
+    /* texto claro */
+    --cor-destaque: #8e44ff;
+    /* roxo vibrante */
+    --cor-borda: #333333;
     --menu-link: #f3e2e2;
 }
 
 :root[data-theme='light'] {
-    --cor-fundo: #f5f5f5;       /* fundo claro */
+    --cor-fundo: #f5f5f5;
+    /* fundo claro */
     --cor-fundo-secundario: #ffffff;
-    --cor-texto: #1c1c1c;       /* texto escuro */
-    --cor-destaque: #6c2ed9;    /* roxo mais suave */
+    --cor-texto: #1c1c1c;
+    /* texto escuro */
+    --cor-destaque: #6c2ed9;
+    /* roxo mais suave */
     --cor-borda: #cccccc;
     --menu-link: #27414e;
 }
@@ -45,19 +51,20 @@ header {
     align-items: center;
     width: 100%;
     background-color: var(--cor-fundo-secundario);
-    border-bottom: 5px solid var(--cor-borda); 
+    border-bottom: 5px solid var(--cor-borda);
 }
 
 .menu-desktop {
-    background: #8d94c9;
     display: none;
     /* esconde o menu desktop */
 }
 
 /* NAV = UL */
 .menu {
-    display: flex; /* em linha // horizontal */
-    gap: 1rem; /* 16px */
+    display: flex;
+    /* em linha // horizontal */
+    gap: 1rem;
+    /* 16px */
     align-items: center;
 }
 
@@ -72,7 +79,7 @@ header {
 }
 
 .menu-text {
-   color: var(--menu-link);
+    color: var(--menu-link);
     font-size: 1.2rem;
     text-transform: uppercase;
 }
@@ -80,10 +87,31 @@ header {
 /* Menu Hamburguer
 botao menu mobile */
 
+#menuHamburger {
+    margin-left: 1rem;
+}
+
+.btn-menu-mobile {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--cor-texto);
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
     .menu-desktop {
         display: flex;
+    }
+
+    .btn-menu-mobile {
+        display: none;
     }
 }

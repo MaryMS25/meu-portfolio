@@ -102,6 +102,49 @@ botao menu mobile */
     justify-content: center;
     padding: 0.5rem;
 }
+ 
+/* NAV */
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--cor-fundo);
+    width: 75%;
+    height: 100vh; /* viewPort Altura */
+    border-left: 1px solid var(--cor-borda);
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem ;
+    transition: .3s ease-in-out ;/* voltar aqui */
+    transform: translateX(100%);
+}
+
+/* Ativar o Menu Mobile */
+.menu-mobile.active {
+    transform: translateX(0%);
+}
+
+.menu-mobile  /* nav */
+ .menu-list /* ul */ {
+    display: flex;
+    flex-direction: column; /* EIXO Y = Vertical */
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 1rem 2rem;
+}
+
+.menu-mobile .menu-item {
+    width: 100%;
+       text-align: center;
+}
+
+.menu-mobile .menu-link {
+    padding: 0.5rem 0;
+    display: inline-block;
+    font-size: 1rem;
+ 
+}
 
 
 
@@ -109,9 +152,14 @@ botao menu mobile */
 @media (min-width: 768px) {
     .menu-desktop {
         display: flex;
+        min-width: 30%;
     }
 
     .btn-menu-mobile {
         display: none;
     }
+
+    .header-toggle {
+        min-width: 30%;
+    } 
 }

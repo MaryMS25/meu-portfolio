@@ -143,10 +143,18 @@ botao menu mobile */
     padding: 0.5rem 0;
     display: inline-block;
     font-size: 1rem;
- 
 }
 
+.logo {
+    width: 4.10rem ; /* comprimento */
+    height: 2.40rem ; /* altura */
+}
 
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {

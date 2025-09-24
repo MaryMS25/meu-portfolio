@@ -37,8 +37,8 @@ html[data-theme='light'] .logo {
 /* Reset CSS = Padronizar */
 /* Seletor Universal */
 * {
-    margin: ;
-    padding: ;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -168,6 +168,10 @@ botao menu mobile */
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+#home {
+    padding: 3.5rem 1rem;
 }
 
 /* Medidas Responsivas */

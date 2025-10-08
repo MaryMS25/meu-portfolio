@@ -65,8 +65,10 @@ header {
     width: 100%;
     background-color: var(--cor-fundo-secundario);
     border-bottom: 5px solid var(--cor-borda);
-    position: fixed; /* Voltar */
-    z-index: 9999; /* Camadas */
+    position: fixed;
+    /* Voltar */
+    z-index: 9999;
+    /* Camadas */
     padding: .5rem 1rem;
 }
 
@@ -118,7 +120,7 @@ botao menu mobile */
     justify-content: center;
     padding: 0.5rem;
 }
- 
+
 /* NAV */
 .menu-mobile {
     position: fixed;
@@ -126,13 +128,15 @@ botao menu mobile */
     right: 0;
     background: var(--cor-fundo);
     width: 75%;
-    height: 100vh; /* viewPort Altura */
+    height: 100vh;
+    /* viewPort Altura */
     border-left: 1px solid var(--cor-borda);
     max-width: 320px;
     display: flex;
     flex-direction: column;
-    padding-top: 4rem ;
-    transition: .3s ease-in-out ;/* voltar aqui */
+    padding-top: 4rem;
+    transition: .3s ease-in-out;
+    /* voltar aqui */
     transform: translateX(100%);
 }
 
@@ -141,10 +145,15 @@ botao menu mobile */
     transform: translateX(0%);
 }
 
-.menu-mobile  /* nav */
- .menu-list /* ul */ {
+.menu-mobile
+/* nav */
+.menu-list
+
+/* ul */
+    {
     display: flex;
-    flex-direction: column; /* EIXO Y = Vertical */
+    flex-direction: column;
+    /* EIXO Y = Vertical */
     gap: 1rem;
     width: 100%;
     padding: 1rem 1rem 2rem;
@@ -152,7 +161,7 @@ botao menu mobile */
 
 .menu-mobile .menu-item {
     width: 100%;
-       text-align: center;
+    text-align: center;
 }
 
 .menu-mobile .menu-link {
@@ -162,8 +171,10 @@ botao menu mobile */
 }
 
 .logo {
-    width: 4.10rem ; /* comprimento */
-    height: 2.40rem ; /* altura */
+    width: 4.10rem;
+    /* comprimento */
+    height: 2.40rem;
+    /* altura */
 }
 
 .header-toggle {
@@ -176,7 +187,8 @@ botao menu mobile */
     /* padding - é para dá espaço */
     padding: 4.1rem 1rem;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .main-content {
@@ -186,8 +198,51 @@ botao menu mobile */
 }
 
 h1 {
-font-size: 2.5rem;
+    font-size: 2.5rem;
 }
+
+.video ifame {
+    aspect-ratio: 16/9;
+}
+
+#home,
+.projetos,
+.sobre,
+.contato {
+    padding: 2.5rem 1rem;
+}
+
+.descricao-video {
+    display: flex;
+    flex-direction: column;
+    background: #69777e;
+    padding: 6.26rem 1rem 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    margin-top: -5.5rem;
+}
+
+.descricao-video h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: -2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px 1.7px 1.9px 1.1px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projetos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
@@ -202,7 +257,7 @@ font-size: 2.5rem;
 
     .header-toggle {
         min-width: 30%;
-    } 
+    }
 
     header {
         padding: 1rem 6rem;
@@ -212,7 +267,8 @@ font-size: 2.5rem;
         font-size: 5rem;
     }
 
-    #home {
+    #home .projetos,
+    .sobre {
         padding: 8rem 6rem 4rem 6rem;
     }
 
@@ -221,10 +277,17 @@ font-size: 2.5rem;
         flex-direction: column;
         align-items: flex-start;
     }
-} /* FIM min 768px  */
+}
+
+/* FIM min 768px  */
 
 @media (min-width: 1400px) {
     h1 {
-    font-size : 6.5rem;
+        font-size: 6.5rem;
     }
+}
+
+.projetos,
+sobre {
+    padding: 10rem 15rem 4rem;
 }

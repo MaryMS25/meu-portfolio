@@ -243,6 +243,16 @@ h1 {
     gap: 4rem;
 }
 
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: .5rem;
+}
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
@@ -267,7 +277,8 @@ h1 {
         font-size: 5rem;
     }
 
-    #home .projetos,
+    #home 
+    .projetos,
     .sobre {
         padding: 8rem 6rem 4rem 6rem;
     }
@@ -277,9 +288,20 @@ h1 {
         flex-direction: column;
         align-items: flex-start;
     }
-}
+} /* FIM min 768px  */
 
-/* FIM min 768px  */
+@media (min-width: 992px) {
+    .projeto-card { 
+        flex-direction: row;
+    }
+    .img-card {
+        width: 55%;
+    }
+
+    .img-card2{
+        width: 30%;
+    }
+}
 
 @media (min-width: 1400px) {
     h1 {

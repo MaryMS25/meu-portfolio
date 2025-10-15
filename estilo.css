@@ -272,6 +272,18 @@ h1 {
     font-family: ; /* Estilo das Fontes */
 }
 
+.card-descricao {
+    font-size: ;
+    font-weight: ;
+    font-family: ;
+}
+
+.card-lista {
+    font-size: ;
+    font-weight: ;
+    font-family: ;
+}
+
 /* Medidas Responsivas */
 @media (min-width: 768px) {
     .menu-desktop {

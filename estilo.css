@@ -45,10 +45,7 @@ body {
     /* cor fundo */
     color: var(--cor-texto);
     /* cor TEXTOS */
-    font-family: "Source Serif 4", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+
 }
 
 a {
@@ -202,6 +199,22 @@ botao menu mobile */
 
 h1 {
     font-size: 2.5rem;
+    font-family: "Source Serif 4", serif;
+}
+
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-weight: 2rem;
+}
+
+h3 {
+   font-family: "Ubuntu", sans-serif;
+   font-weight: 400;
+   font-style: italic;
 }
 
 .video ifame {
@@ -266,26 +279,23 @@ h1 {
 }
 
 .card-title {
-    color: ; /* Cor do Texto */
-    font-size: ; /* Tamanho texto */
-    font-weight: ; /* largura das letras */
-    font-family: ; /* Estilo das Fontes */
-}
-
-.card-descricao {
+    color: ;
+    /* Cor do Texto */
     font-size: ;
+    /* Tamanho texto */
     font-weight: ;
+    /* largura das letras */
     font-family: ;
-}
-
-.card-lista {
-    font-size: ;
-    font-weight: ;
-    font-family: ;
+    /* Estilo das Fontes */
 }
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
+
+    #inicio {
+        padding-top: 6rem;
+    }
+
     .menu-desktop {
         display: flex;
         min-width: 30%;
@@ -305,6 +315,14 @@ h1 {
 
     h1 {
         font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;                   
     }
 
     #home .projetos,
@@ -338,9 +356,23 @@ h1 {
 
 }
 
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
 @media (min-width: 1400px) {
     h1 {
         font-size: 6.5rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 3.25rem;
     }
 }
 

@@ -13,6 +13,30 @@
     /* roxo vibrante */
     --cor-borda: #333333;
     --menu-link: #f3e2e2;
+
+    --cor-borda: #836b6b;
+
+    --cor-hover-icone: #961818;
+
+    .bi-github {
+        color: #adadad;
+    }
+    /* Cinza suave */
+
+    .bi-instagram {
+        color: #f7b9d5;
+    }
+    /* Rosa pastel */
+
+    .bi-facebook {
+        color: #a8d8ea;
+    }
+    /* Azul bebê */
+
+    .bi-whatsapp {
+        color: #b5e7a0;
+    }
+    /* Verde menta */
 }
 
 :root[data-theme='light'] {
@@ -25,6 +49,19 @@
     /* roxo mais suave */
     --cor-borda: #cccccc;
     --menu-link: #27414e;
+
+
+    --cor-borda: #aa2222;
+
+    --cor-hover-icone: #ffb300;
+}
+
+/* Ícones das redes sociais */
+.redes-sociais i {
+    color: #f7b9d5;
+    /* Rosa pastel */
+    font-size: 1.8rem;
+    transition: 0.3s ease;
 }
 
 /* Inverter Cor LOGO = Filtro */
@@ -38,6 +75,10 @@ html[data-theme='light'] .logo {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -212,9 +253,9 @@ h2 {
 }
 
 h3 {
-   font-family: "Ubuntu", sans-serif;
-   font-weight: 400;
-   font-style: italic;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .video ifame {
@@ -278,15 +319,45 @@ h3 {
     gap: 1rem;
 }
 
-.card-title {
-    color: ;
+/* H3  */
+.card-titulo {
+    color: var(--cor-texto);
     /* Cor do Texto */
-    font-size: ;
+    font-size: 2rem;
     /* Tamanho texto */
-    font-weight: ;
+    font-weight: 400;
     /* largura das letras */
-    font-family: ;
-    /* Estilo das Fontes */
+    font-family: "Inter", sans-serif;
+    /* Estilo das fontes */
+
+}
+
+.card-descricao {
+    color: var(--cor-texto);
+    font-family: "Inter", sans-serif;
+}
+
+.card-item {
+    margin-bottom: .8rem;
+}
+
+.card-item i {
+    margin-right: 8px;
+}
+
+.card-item i:hover {
+    color: var(--cor-hover-icone);
+    transition: 0.3s ease-in-out;
+}
+
+.redes-sociais {
+    font-size: 1.4rem;
+}
+
+.redes-sociais i:hover {
+    color: #a8d8ea;
+    transform: scale(1.2);
+    text-shadow: 0 0 5px rgba(255, 200, 220, 0.7);
 }
 
 /* Medidas Responsivas */
@@ -300,7 +371,7 @@ h3 {
 
 @media (min-width: 768px) {
 
-    #inicio {
+    #home {
         padding-top: 6rem;
     }
 
@@ -330,7 +401,7 @@ h3 {
     }
 
     h3 {
-        font-size: 2rem;                   
+        font-size: 2rem;
     }
 
     #home .projetos,

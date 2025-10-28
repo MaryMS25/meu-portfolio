@@ -360,6 +360,15 @@ h3 {
     text-shadow: 0 0 5px rgba(255, 200, 220, 0.7);
 }
 
+.col6 {
+ background:#fbf9fd;
+}
+
+.col5 {
+background: #27414e;
+}
+
+
 /* Medidas Responsivas */
 @media (max-width: 768px) {
     #home {

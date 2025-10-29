@@ -368,6 +368,9 @@ h3 {
 background: #27414e;
 }
 
+.col7 {
+    background: red;
+}
 
 /* Medidas Responsivas */
 @media (max-width: 768px) {
